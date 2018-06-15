@@ -187,7 +187,7 @@ export class NgDateRangePickerComponent implements ControlValueAccessor, OnInit,
     this.generateCalendar();
   }
 
-  selectRange(range: 'tm' | 'lm' | 'lw' | 'tw' | 'ty' | 'ly'): void {
+  selectRange(range: 'tm' | 'lm' | 'lw' | 'tw' | 'ty' | 'ly'): void { console.log('test');
     let today = dateFns.startOfDay(new Date());
 
     switch (range) {
